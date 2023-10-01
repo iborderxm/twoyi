@@ -68,7 +68,8 @@ task cargoBuildDebug {
             //切换到sh文件所在的目录，执行脚本
             workingDir new File(project.projectDir, "rs")
             //执行shell脚本 "," 传参
-            commandLine "sh", "build_rs.sh", "--debug"
+            //commandLine "sh", "build_rs.sh", "--debug"
+            commandLine "sh", "build_rs.sh"
         }
     }
 }
