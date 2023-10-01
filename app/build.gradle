@@ -76,7 +76,7 @@ task cargoBuildDebug {
 
 tasks.whenTaskAdded { task ->
    if ((task.name == 'javaPreCompileDebug')) {
-        task.dependsOn 'cargoBuildDebug'
+        //task.dependsOn 'cargoBuildDebug'
     }
     if ((task.name == 'javaPreCompileRelease')) {
         task.dependsOn 'cargoBuild'
